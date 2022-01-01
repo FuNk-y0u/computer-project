@@ -1,0 +1,68 @@
+@font-face{
+	font-family: Dosis; src: url("font/Dosis-Bold.ttf");
+}
+
+@font-face{
+	font-family: Roboto; src: url("font/Roboto-Regular.ttf");
+}
+
+@font-face{
+	font-family: Consolas; src: url("font/Consolas.ttf");
+}
+.topbar-div{
+	background-color: #53435d;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px black;
+}
+
+.topbar{
+	font-family: Dosis;
+	color: white;
+}
+
+h1{
+	font-family: Dosis;
+	color: #4C4C6D;
+}
+
+.logotext{
+	font-family: Consolas;
+	color: #1693d0;
+	margin-left: 100px;
+}
+
+pre{
+	color: #1693d0;
+}
+
+h2{
+	font-family: Dosis;
+	color: #4C4C6D;
+}
+
+.para{
+	font-family: Roboto;
+	color: white;
+	font-size: 20px;
+}
+
+.intro{
+	color: #44475a;
+	font-family: Dosis;
+}
+
+body{
+	background-image: url("../images/arch/bg.png");
+}
+
+a{
+  
+  background-color: transparent;
+  text-decoration: none;
+  color: White;
+}
+a:hover {
+  color: White;
+  background-color: transparent;
+  text-decoration: underline;
+}
