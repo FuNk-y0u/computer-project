@@ -1,0 +1,53 @@
+<html>
+	<head>
+			<title>
+				Nlogs: Manage Your Tasks!
+			</title>
+			<link rel="stylesheet" href="css/main.css"/>
+			<script>
+				let n = 1;
+				function get_signup_data(){
+					var task_box = document.getElementById("task");
+					let task = task_box.value;
+
+					const div = document.createElement("div");
+					
+					
+
+					const title = document.createElement("H1");
+					const title_text = document.createTextNode(n+". "+task);
+
+					title.appendChild(title_text);
+					div.appendChild(title);
+
+					const todobox = document.getElementById("todo");
+					todobox.appendChild(div);
+					n = n + 1;
+				}
+
+				function clearTask(){
+					location.reload()
+				}
+
+			</script>
+	</head>
+
+	<body>
+		<center>
+			<img src="images/Untitled.png" style="width: 300px; height: 160px">
+			<p>A simple todo-list project by Robosky</p>
+		<div class = "topbar-div" style="width: 500px; height: 250px; background-color: #282a36;">
+			<input type="text" id = "task" style = "width:400px; height: 50px; border-radius: 10px" placeholder="Your task here!">
+			<button onclick="get_signup_data()">add task</button>
+			<hr>
+			<button onclick="clearTask()" class = "bclear">
+				Clear Todo list
+			</button>
+		</div>
+		<div  class = "nth" id = "todo" style="background-color: white; box-shadow: 0px 0px 0px black;">
+			<h2> TO DO LIST:</h2><br>
+		</div>
+		
+		</center>
+	</body>
+</html>
