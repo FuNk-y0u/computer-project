@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Ncoin:Flip your coin!</title>
+		<link rel="stylesheet" href="css/main.css"/>
+		
+		<script>		
+			function buttonclikc(){
+				let x = Math.floor((Math.random()*2)+1);
+				if(x == 1){
+					document.getElementById("r").innerHTML = "Heads!";
+					document.getElementById("coin").src = "images/H.png";
+				}
+				else{
+					document.getElementById("r").innerHTML = "Tails!";
+					document.getElementById("coin").src = "images/T.png";
+				}
+			}										
+		</script>
+	</head>
+	<body>
+		<center>
+			<img src="Images/Untitled.png" style="width: 300px; height: 160px">
+			<p class ="desc">A simple coin flip game by Robosky</p>
+		<div style="width: 500px; height: 500px; background-color: white;">
+			<img src="images/H.png" id ="coin">
+		</div>
+		<h1 id ="r"> </h1>
+		<button onclick="buttonclikc()">Flip Coin</button>
+		</center>
+	</body>
+</html>
